@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import Navbar from "./Components/Navbar";
 import { NewsBoard } from "./Components/NewsBoard";
 import ClipLoader from "react-spinners/ClipLoader";
-import "./App.css";
 import { AnimatePresence, motion } from "framer-motion";
+import "./App.css";
 
 export const App = () => {
   const [loading, setLoading] = useState(false);
@@ -13,9 +13,9 @@ export const App = () => {
     setLoading(true);
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1000); // Simulating a loading period of 8 seconds
+    }, 1000);
 
-    return () => clearTimeout(timer); // Cleanup the timer
+    return () => clearTimeout(timer);
   }, []);
 
   return (

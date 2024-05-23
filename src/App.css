@@ -28,6 +28,7 @@
   color: #ffffff;
 }
 
+
 @media (max-width: 768px) {
   .nav-link {
     padding: 0.5rem;
